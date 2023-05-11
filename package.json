@@ -4,27 +4,32 @@
   "description": "**¡Sígueme en Youtube para más contenido de React y Javascript!** 👉 https://www.youtube.com/midudev",
   "main": "index.js",
   "scripts": {
+    "vercel-build": "npm run build",
     "build": "webpack",
     "lint": "standard",
     "dev": "webpack-dev-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "plugins": [
+    "babel-plugin-styled-components"
+  ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/midudev/curso-platzi-react-avanzado.git"
+    "url": "git+https://github.com/sofiaqgis/pet-app-new.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/midudev/curso-platzi-react-avanzado/issues"
+    "url": "https://github.com/sofiaqgis/pet-app-new.git/issues"
   },
-  "homepage": "https://github.com/midudev/curso-platzi-react-avanzado#readme",
+  "homepage": "https://github.com/sofiaqgis/pet-app-new.git#readme",
   "devDependencies": {
     "@babel/core": "^7.21.8",
     "@babel/preset-env": "^7.21.5",
     "@babel/preset-react": "^7.18.6",
     "babel-loader": "^9.1.2",
+    "babel-plugin-styled-components": "^2.1.1",
     "html-webpack-plugin": "^5.5.1",
     "standard": "^17.0.0",
     "webpack": "^5.82.0",
@@ -32,8 +37,11 @@
     "webpack-dev-server": "^4.13.3"
   },
   "dependencies": {
+    "firebase": "^9.21.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.8.0",
+    "styled-components": "^5.3.10"
   },
   "standard": {
     "ignore": [
